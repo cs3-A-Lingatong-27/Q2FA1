@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Links and Divs</title>
+
+  <style>
+    a#link1{
+		float: left;
+		display: inline-block;
+		padding: 10px;
+		margin: 5px;
+		border: 2px solid black;
+		text-decoration: none;
+	}
+    a#link2 {
+      display: inline-block;
+      padding: 10px;
+      margin: 5px;
+      border: 2px solid black;
+      text-decoration: none;
+    }
+
+    a#link1:link {
+      color: blue;
+      background-color: lightblue;
+    }
+
+    a#link1:hover {
+      color: red;
+      background-color: lightcoral;
+    }
+
+    a#link1:visited {
+      color: purple;
+      background-color: lavender;
+    }
+
+    a#link1:active {
+      color: white;
+      background-color: darkblue;
+    }
+
+    a#link2:link {
+      color: green;
+      background-color: lightgreen;
+    }
+
+    a#link2:hover {
+      color: darkgreen;
+      background-color: palegreen;
+    }
+
+    a#link2:visited {
+      color: brown;
+      background-color: burlywood;
+    }
+
+    a#link2:active {
+      color: white;
+      background-color: forestgreen;
+    }
+
+    div#div1 {
+      width: 200px;
+      height: 100px;
+      background-color: lightgray;
+      margin-bottom: 10px;
+    }
+
+    div#div2 {
+      width: 200px;
+      height: 100px;
+      background-color: lightgray;
+    }
+
+    a#link1:target ~ div#div1 {
+      background-color: darkcyan;
+      color: white;
+    }
+
+    a#link2:target ~ div#div2 {
+      border: 10px dotted green;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#link1" id="link1">First Link</a>
+  <a href="#link2" id="link2">Second Link</a>
+
+  <div id="div1">div1</div>
+  <div id="div2">div2</div>
+
+</body>
+</html>
